@@ -1,0 +1,78 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f6f8fa;
+}
+
+#main {
+    background: #f0f0f0;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px;
+}
+
+p {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.input-group input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#short {
+    background: linear-gradient(to right, #3498db, #2980b9);
+    color: white;
+    border: 1px solid #2980b9;
+}
+
+#short:hover {
+    background: linear-gradient(to right, #2980b9, #3498db);
+}
+
+#copy {
+    background: linear-gradient(to right, #2ecc71, #27ae60);
+    color: white;
+    border: 1px solid #27ae60;
+}
+
+#copy:hover {
+    background: linear-gradient(to right, #27ae60, #2ecc71);
+}
+
+button:hover {
+    filter: brightness(90%);
+}
+
+/* Media query for smaller devices */
+@media screen and (max-width: 480px) {
+    #main {
+        width: 90%;
+    }
+}
